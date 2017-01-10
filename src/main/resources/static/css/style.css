@@ -1,0 +1,25 @@
+.colorFireBrick {
+    color: FireBrick;
+}
+
+.colorDarkGreen {
+    color: DarkGreen;
+}
+
+.colorMaroon {
+    color: Maroon;
+}
+
+.font18 {
+    font-size: 18px;
+}
+
+.panel-transparent {
+    margin-top: 15px;
+    background: rgba(252, 249, 247, 0.8) !important;
+}
+
+.image {
+    background: url('../img.jpeg') no-repeat;
+    background-size: 100% auto;
+}

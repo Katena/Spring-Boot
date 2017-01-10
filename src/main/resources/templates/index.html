@@ -1,0 +1,146 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>Опрос</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet"/>
+    <link href="../css/bootstrap-select.css" rel="stylesheet"/>
+    <link href="../sass/bootstrap-select.scss" rel="stylesheet"/>
+    <link href="../css/style.css" rel="stylesheet"/>
+    <!-- <link href="sass/variables.scss" rel="stylesheet">-->
+</head>
+<body style="background: url('../img.jpeg') no-repeat; background-size: 100% auto;">
+<div class="row">
+    <div class="col-md-4"></div>
+
+    <div class="panel panel-transparent col-md-4">
+        <div class="panel-body" style="text-align: center">
+            <h1 class="colorFireBrick"><em>Дорогие кинолюбители!</em></h1>
+
+            <p></p>
+            <h4 class="colorDarkGreen"><em>Просим Вас принять участие в голосовании для выдвижения
+                наиболее достойных фильмов, заслуживающих народного признания.</em></h4>
+
+            <p></p>
+            <h4 class="colorDarkGreen"><em>Для этого выберите один фильм в каждой номинации,
+                наиболее полно соответствующий описанию номинации.</em></h4>
+
+            <p></p>
+            <h4 class="colorDarkGreen"><em>Спасибо!</em></h4>
+
+
+            <form th:action="@{/vote}" method="post" style="display: inline-block; text-align: center;">
+                <h2 class="colorFireBrick"> Номинация "Профессиональный фильм"</h2>
+                <h4 class="colorDarkGreen">(Профессионально снятый фильм. Отличная режиссура, игра актеров и т.д.).</h4>
+                <select class="font18" name="prof">
+                    <option value="0">Выберите фильм</option>
+                    <optgroup label="Комедия">
+                        <option value="1">Иван Васильевич меняет профессию</option>
+                        <option value="2">В джазе только девушки</option>
+                        <option value="3">Один дома</option>
+                        <option value="4">Шпион</option>
+                        <option value="5">Полтора шпиона</option>
+                    </optgroup>
+
+                    <optgroup label="Боевик">
+                        <option value="6">Механик: Воскрешение</option>
+                        <option value="7">Джон Уик</option>
+                        <option value="8">Миссия невыполнима Племя изгоев</option>
+                        <option value="9">Перевозчик: Наследие</option>
+                        <option value="10">Терминатор 2: Судный день</option>
+                    </optgroup>
+
+                    <optgroup label="Фантастика">
+                        <option value="11">Матрица</option>
+                        <option value="12">Начало</option>
+                        <option value="13">Загадочная история Бенджамина Баттона</option>
+                        <option value="14">Интерстеллар</option>
+                        <option value="15">Аватар</option>
+                    </optgroup>
+
+                    <optgroup label="Ужасы">
+                        <option value="16">Молчание ягнят</option>
+                        <option value="17">Пила: Игра на выживание</option>
+                        <option value="18">Чужие</option>
+                        <option value="19">Хищник</option>
+                        <option value="20">Белая мгла</option>
+                    </optgroup>
+
+                    <optgroup label="История">
+                        <option value="21">Храброе сердце</option>
+                        <option value="22">Последний самурай</option>
+                        <option value="23">Троя</option>
+                        <option value="24">Патриот</option>
+                        <option value="25">Перл-Харбор</option>
+                    </optgroup>
+
+                </select>
+                <br/>
+
+                <h2 class="colorFireBrick"> Номинация "Самый душевный фильм"</h2>
+                <h4 class="colorDarkGreen">(Фильм который "берёт за душу". Фильм с глубоким смыслом.
+                    Фильм который оставляет в душе сильные яркие впечатления).</h4>
+                <select class="font18" name="soul">
+                    <option value="0">Выберите фильм</option>
+                    <optgroup label="Комедия">
+                        <option value="1">Иван Васильевич меняет профессию</option>
+                        <option value="2">В джазе только девушки</option>
+                        <option value="3">Один дома</option>
+                        <option value="4">Шпион</option>
+                        <option value="5">Полтора шпиона</option>
+                    </optgroup>
+
+                    <optgroup label="Боевик">
+                        <option value="6">Механик: Воскрешение</option>
+                        <option value="7">Джон Уик</option>
+                        <option value="8">Миссия невыполнима Племя изгоев</option>
+                        <option value="9">Перевозчик: Наследие</option>
+                        <option value="10">Терминатор 2: Судный день</option>
+                    </optgroup>
+
+                    <optgroup label="Фантастика">
+                        <option value="11">Матрица</option>
+                        <option value="12">Начало</option>
+                        <option value="13">Загадочная история Бенджамина Баттона</option>
+                        <option value="14">Интерстеллар</option>
+                        <option value="15">Аватар</option>
+                    </optgroup>
+
+                    <optgroup label="Ужасы">
+                        <option value="16">Молчание ягнят</option>
+                        <option value="17">Пила: Игра на выживание</option>
+                        <option value="18">Чужие</option>
+                        <option value="19">Хищник</option>
+                        <option value="20">Белая мгла</option>
+                    </optgroup>
+
+                    <optgroup label="История">
+                        <option value="21">Храброе сердце</option>
+                        <option value="22">Последний самурай</option>
+                        <option value="23">Троя</option>
+                        <option value="24">Патриот</option>
+                        <option value="25">Перл-Харбор</option>
+                    </optgroup>
+                </select>
+
+                <p></p>
+                <input style="font-size: 20px;" type="submit" value="Проголосовать" class="btn btn-default"/>
+            </form>
+
+            <h1 th:if="${error}" th:text="${error}" class="colorFireBrick"/>
+
+            <h1 th:if="${success}" th:text="${success}" class="colorDarkGreen"/>
+
+            <h1 th:if="${result}" th:text="${result}" class="colorMaroon"/>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+
+
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-select.js"></script>
+
+</body>
+</html>
